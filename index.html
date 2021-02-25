@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>K2</title>
+<!--  파비콘  -->
+    <link href="images/favicon.png" type="image/icon" rel="shortcut icon">
+<!--  외부 css  -->
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet">
+    
+    
+    <script src="js/jquery-3.5.1.js"></script> <!-- 순서대로 연결 -->
+    <script src="js/jquery.bxslider.js"></script> 
+    <script>
+     $(document).ready(function(){
+      $('.slider').bxSlider({
+          auto:true
+      });
+         
+         
+     $('.bx-wrapper .bx-controls-direction a').click(function(){
+         $(this).addClass('active');
+     }); 
+    
+     $('.bx-wrapper .bx-controls-direction a').mouseout(function(){
+         $(this).removeClass('active');
+     });      
+         
+    });
+    </script>
+      
+     
+</head>
+ <div class="wrap">
+    <header>  
+     <div class="header_wrap">
+       <div class="right_area">
+           <ul>
+               <li><a href="#">LOGIN</a></li>
+               <li><a href="#">JOIN</a></li>
+               <li><a href="#">CART</a></li>
+               <li class="bag"><a href="#"><img src="images/0.png" alt="장바구니갯수"></a></li>
+               <li><a href="#">MY PAGE</a></li>
+               <li class="search"><a href="#"><img src="images/search.png" alt="검색"></a></li>
+           </ul>
+       </div>
+       
+       <div class="logo"><a href="index.html"><img src="images/k2_logo.png" alt="k2로고"></a></div>
+       
+<!--   내비게이션     -->
+       <nav>
+          <ul>
+             <li>
+                 <a href="#">DOWN</a>
+                 <ul class="sub">
+                     <li><a href="#">남성</a></li>
+                     <li><a href="#">여성</a></li>
+                     <li><a href="#">키즈</a></li>
+                 </ul>
+             </li>
+             
+             <li>
+                 <a href="#">MEN</a>
+                 <ul class="sub">
+                     <li><a href="#">자켓</a></li>
+                     <li><a href="#">셔츠</a></li>
+                     <li><a href="#">베스트</a></li>
+                     <li><a href="#">팬츠</a></li>
+                     <li><a href="#">이너웨어</a></li>
+                     <li><a href="#">신상기획</a></li>
+                 </ul>
+             </li>
+             
+             <li>
+                 <a href="#">WOMEN</a>
+                 <ul class="sub">
+                     <li><a href="#">자켓</a></li>
+                     <li><a href="#">셔츠</a></li>
+                     <li><a href="#">베스트</a></li>
+                     <li><a href="#">팬츠</a></li>
+                     <li><a href="#">이너웨어</a></li>
+                     <li><a href="#">신상기획</a></li>
+                 </ul>
+             </li>
+             
+             <li>
+                 <a href="#">KIDS</a>
+                 <ul class="sub">
+                     <li><a href="#">신상키즈</a></li>
+                     <li><a href="#">신상기획</a></li>
+                 </ul>
+             </li>
+             
+             <li>
+                 <a href="#">SHOES</a>
+                 <ul class="sub">
+                     <li><a href="#">남성용</a></li>
+                     <li><a href="#">여성용</a></li>
+                     <li><a href="#">키즈</a></li>
+                 </ul>
+             </li>
+             
+             <li>
+                 <a href="#">BAG</a>
+                 <ul class="sub">
+                     <li><a href="#">등산배낭</a></li>
+                     <li><a href="#">일반배낭</a></li>
+                 </ul>
+             </li>
+             
+             <li>
+                 <a href="#">ACC</a>
+                 <ul class="sub">
+                     <li><a href="#">모자</a></li>
+                     <li><a href="#">장갑</a></li>
+                     <li><a href="#">양말</a></li>
+                     <li><a href="#">이너웨어</a></li>
+                     <li><a href="#">스틱</a></li>
+                     <li><a href="#">백패킹</a></li>
+                     <li><a href="#">기타</a></li>
+                 </ul>
+             </li>
+             
+          </ul>
+       </nav>
+     </div> <!-- header_wrap -->   
+   </header>  
+   
+    <section class="slide slider"> <!-- bxslider를 연결하기 위해 slider로 추가 -->
+        
+          <div><a href="#"><img src="images/s1.jpg" alt="씬에어"></a></div>
+          <div><a href="#"><img src="images/s2.jpg" alt="스페셜 베네피트"></a></div>
+          <div><a href="#"><img src="images/s3.jpg" alt="웨어러블 발열 시스템"></a></div>    
+     
+<!--    버튼     -->
+<!--
+         <a href="#" class="prev"><img src="images/left.png" alt="이전"></a>
+         <a href="#" class="next"><img src="images/right.png" alt="다음"></a>
+-->
+    </section>  
+    
+    
+    <section class="best">
+         <h1><img src="images/best_item.png" alt="베스트아이템"></h1>
+         <ul>
+           <li><a href="#"><img src="images/best1.png" alt="부드럽고 포근한 폴리스"></a></li>
+           <li><a href="#"><img src="images/best2.jpg" alt="키즈 플리스"></a></li>
+           <li><a href="#"><img src="images/best3.jpg" alt="풋웨어"></a></li>
+         </ul>
+    </section>    
+    
+    
+    <section class="product">
+      <h1><img src="images/new_arrival.png" alt="신상품"></h1>
+      <ul>
+         <li> <!-- 1 -->
+            <div class="pro_li">
+              <div class="back"><a href="#"><img src="images/new1.jpg" alt="올디엄_다운_자켓_모델"></a></div>
+              <div class="front"><a href="#"><img src="images/new1_1.jpg" alt="올디엄_다운_자켓_상품"></a></div>
+            </div>
+            <div class="pro_li2">
+               <p>올디엄(ALLDIUM) 다운 자켓 IVORY</p> 
+               <p>290,000 ￦</p>
+               <div class="c1"><img src="images/color_1.jpg" alt="신상품_컬러_4개"></div>
+            </div>
+         </li>
+         
+        <li> <!-- 2 -->
+            <div class="pro_li">
+              <div class="back"><a href="#"><img src="images/new2.jpg" alt="도로시_화이트_모델"></a></div>
+              <div class="front"><a href="#"><img src="images/new2_1.jpg" alt="도로시_화이트_상품"></a></div>
+            </div>
+            <div class="pro_li2">
+               <p>도로시(DOROTHY) (RDS) WHITE</p> 
+               <p>430,000 ￦</p>
+               <div class="c1"><img src="images/color_2.jpg" alt="신상품_컬러_4개"></div>
+            </div>
+        </li>
+        
+        <li> <!-- 3 -->
+            <div class="pro_li">
+              <div class="back"><a href="#"><img src="images/new3.jpg" alt="씬에어_다운_블랙_모델"></a></div>
+              <div class="front"><a href="#"><img src="images/new3_1.jpg" alt="씬에어_다운_블랙_상품"></a></div>
+            </div>
+            <div class="pro_li2">
+               <p>여성 K2 THIN AIR 다운 SOFT / BLACK</p> 
+               <p>470,000 ￦</p>
+               <div class="c2"><img src="images/color_3.jpg" alt="신상품_컬러_3개"></div>
+            </div>
+         </li>
+         
+         <li> <!-- 4 -->
+            <div class="pro_li">
+                <div class="back"><a href="#"><img src="images/new4.jpg" alt="씬에어_다운_카키_모델"></a></div>
+                <div class="front"><a href="#"><img src="images/new4_1.jpg" alt="씬에어_다운_카키_상품"></a></div>
+            </div>
+            <div class="pro_li2">
+               <p>남성 K2 THIN AIR 다운 SOFT / KHAKI</p> 
+               <p>470,000 ￦</p>
+               <div class="c2"><img src="images/color_4.jpg" alt="신상품_컬러_3개"></div>
+            </div>
+         </li>
+         
+         <li> <!-- 5 -->
+            <div class="pro_li">
+                <div class="back"><a href="#"><img src="images/new5.jpg" alt="씬에어_라이트블루스톤_모델"></a></div>
+                <div class="front"><a href="#"><img src="images/new5_1.jpg" alt="씬에어_라이트블루스톤_상품"></a></div>
+            </div>
+            <div class="pro_li2">
+               <p>K2 THIN AIR LIGHT BLUE STONE</p> 
+               <p>430,000 ￦</p>
+               <div class="c2"><img src="images/color_5.jpg" alt="신상품_컬러_3개"></div>
+            </div>
+         </li>
+         
+         <li> <!-- 6 -->
+            <div class="pro_li">
+                <div class="back"><a href="#"><img src="images/new6.jpg" alt="코볼드_라이트_모델"></a></div>
+                <div class="front"><a href="#"><img src="images/new6_1.jpg" alt="코볼드_라이트_상품"></a></div>
+            </div>
+            <div class="pro_li2">
+               <p>ALP 코볼드 라이트 SHADOW GREY</p> 
+               <p>210,000 ￦</p>
+               <div class="c2"><img src="images/color_6.jpg" alt="신상품_컬러_3개"></div>
+            </div>
+         </li>
+         
+         <li> <!-- 7 -->
+            <div class="pro_li">
+                <div class="back"><a href="#"><img src="images/new7.jpg" alt="앨리스_롱_모델"></a></div>
+                <div class="front"><a href="#"><img src="images/new7_1.jpg" alt="앨리스_롱_상품"></a></div>
+            </div>
+            <div class="pro_li2">
+               <p>앨리스 롱(ALICE LONG) BLACK</p> 
+               <p>470,000 ￦</p>
+               <div class="c2"><img src="images/color_7.jpg" alt="신상품_컬러_3개"></div>
+            </div>
+         </li>
+         
+         <li> <!-- 8 -->
+            <div class="pro_li">
+                <div class="back"><a href="#"><img src="images/new8.jpg" alt="피나투보_모델"></a></div>
+                <div class="front"><a href="#"><img src="images/new8_1.jpg" alt="피나투보_상품"></a></div>
+            </div>
+            <div class="pro_li2">
+               <p>피나투보(PINATUBO) ICE GREY</p> 
+               <p>249,000 ￦</p>
+               <div class="c2"><img src="images/color_8.jpg" alt="신상품_컬러_3개"></div>
+            </div>
+         </li>    
+      </ul>     
+    
+    </section>      
+       
+       
+    <section class="movie"><!-- 87p -->
+        <h1><img src="images/k2_video.png" alt="k2유투브영상"></h1>
+        <div class="movie_in">
+         <iframe width="1280" height="720" src="https://www.youtube.com/embed/SNphAq6axyg?autoplay=1&amp;mute=1&amp;loop=1&amp;start=1&amp;playlist=SNphAq6axyg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+        </div>
+    </section>   
+       
+       
+    <section class="love">
+         <div class="fixed_bg">
+            <h1><img src="images/story.png" alt="스토리"></h1>
+         </div>
+         <div class="love_down"> 
+           <div class="left_l"><img src="images/k_314.jpg" alt="LOVEDOWN"></div>
+           <div class="right_l">
+               <h1><img src="images/love_down.png" alt="러브다운"></h1>
+               <p>케이투의 기술력과 디자인을 담아낸<br>2021 F/W DOWN JACKET COLLECTION</p>
+               <p>세계최초로 다운을 패브릭화 하여 더욱 가볍고 따뜻한 신소재 씬다운을 사용하였습니다.<br>
+                  착용 즉시 느껴지는 가벼움, 멋스러운 오버핏의 실루엣으로<br>
+                  겨울 스타일링 고민을 한번에 해결해줄 다운!</p>
+               <div class="more"><a href="#"><img src="images/more_view.jpg" alt="더보기"></a></div>
+           </div>
+         </div>
+    </section>
+    
+          
+    <section class="magazine">
+        <h1><img src="images/magazine.png" alt="매거진"></h1>
+        <ul>
+           <li>
+               <div class="photo">
+                 <a href="#"><img src="images/m_1.png" alt="씬에어_다운"> 
+                 <p>K2 THIN AIR 다운 SOFT</p>
+                 <p>세계최초, 유일한 다운 패브릭<br>WEAR THE FUTURE</p></a>
+               </div>
+           </li>
+           <li>
+               <div class="photo">
+                 <a href="#"><img src="images/m_2.png" alt="플라이하이크렉스"> 
+                 <p>플라이하이크 렉스</p>
+                 <p>오래 걸어도 발이 편안한<br>K2의 워크 솔루션</p></a> 
+               </div>
+           </li>
+           <li>
+               <div class="photo">
+                 <a href="#"><img src="images/m_3.png" alt="마테호른_라이트"> 
+                 <p>K2 마테호른 라이트</p>
+                 <p>K2만의 독자적인 기술<br>GRIP 아웃솔 적용</p></a>
+               </div>
+           </li>
+           <li>
+               <div class="photo">
+                 <a href="#"><img src="images/m_4.png" alt="코볼드_시리즈"> 
+                 <p>KOBOLD SERIES</p>
+                 <p>K2의 대표적인 대장급<br>헤비다운</p></a>
+               </div>
+           </li>
+            <div class="more2"> <a href="#"><img src="images/more_veiw2.jpg" alt="더보기"></a></div>
+        </ul>
+    </section>            
+                      
+                            
+    <section class="insta">
+        <h1><img src="images/insta.png" alt="인스타그램"></h1>
+        <ul>
+            <li>
+                <a href="#"><img src="images/insta_1.jpg" alt="인스타_사진1"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/insta_2.jpg" alt="인스타_사진2"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/insta_3.jpg" alt="인스타_사진3"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/insta_4.jpg" alt="인스타_사진4"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/insta_5.jpg" alt="인스타_사진5"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/insta_6.jpg" alt="인스타_사진6"></a>
+            </li>
+        </ul>
+    </section>                               
+                                        
+                                              
+                                                          
+    <footer>
+      <div class="footer_wrap">
+        
+       <div class="ft_wrap">
+         <ul class="f_nav">
+            
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">A/S조회</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">정보보호 캠페인</a></li>
+                <li><a href="#">회원혜택</a></li>
+         </ul>
+         
+         <ul class="sns">
+                <li><a href="#"><img src="images/facebook.png" alt="페이스북"></a></li>
+                <li><a href="#"><img src="images/youtube.png" alt="유투브"></a></li>
+                <li><a href="#"><img src="images/insta2.png" alt="인스타"></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="트위터"></a></li>
+        </ul>
+      </div>
+ 
+      <div class="fb_wrap">
+         <ul class="fb_l">   
+           <li> 
+              <div class="fl_wrap"> 
+                 <h1><img src="images/f_logo.png" alt="로고"></h1>
+                 <p>서울특별시 강남구 자곡로 174-14, 901호(자곡동) 케이투코리아(주)     대표이사 정영훈<br>
+                 사업자등록번호 137-81-14921  <span>사업자정보확인＞</span> <br> 
+                 통신판매업신고번호 제2019-서울강남-02482호 부가통신사업신고번호 4236     FAX 02-3294-8183<br> 
+                 COPYRIGHT 2016 K2 korea. ALL RIGHTS RESERVED.</p>
+              </div>
+          </li>
+        </ul>
+      
+       <ul class="fb_r">
+         <li>           
+          <div class="fr_wrap">
+              <p>CS CENTER</p>
+              <p>1644-7781</p>
+              <p>서울시 서동구 아차산로 11가길 3, 2층/케이투코리아(주)  CS CENTER<br> 
+                  상담시간 : 9:00~17:00 (토,일,공휴일 <span>휴무</span>)<br>
+                  점심시간 : 12:30~13:30 (상담 불가)</p>
+           </div>
+          </li>  
+       </ul>   
+       
+       </div>  
+       
+                 
+      </div>       
+    </footer>
+     
+     
+     
+ </div> 
+
+
+<body>
+    
+</body>
+</html>
